@@ -1,0 +1,68 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-color: #469250;
+    border: solid #252323;
+    border-width: 35;
+    display:inline-block;
+}
+
+h1,h2 {
+    font-family: "Libre Franklin";
+    color: aliceblue;
+}
+
+h3 {
+    font-family: "Libre Franklin Italic";
+    color: aliceblue;
+}
+
+p {
+    font-family: "Questrial";
+    color: #252323;
+    background-color: aliceblue;
+}
+
+.frontpage_title {
+    padding-left: 1cm;
+}
+
+.main_block {
+    padding-left: 1cm;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+
+@font-face {
+    font-family: "Questrial";
+    src: 
+    url("../font/Questrial.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    src: 
+    url("../font/LibreFranklin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Franklin Italic";
+    src: 
+    url("../font/LibreFranklin-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
