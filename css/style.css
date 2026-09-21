@@ -70,6 +70,17 @@ h3, h2 {
     /* gap: 10px; */
 }
 
+.article_group {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    /* height: 20cm; */
+    /* gap: 10px; */
+}
+
 
 .frontpage_gradient {
     /* margin: 50px; */
