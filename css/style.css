@@ -3,17 +3,37 @@ body{
     width: 100%;
     height: 100%;
     margin: 0%;
-    background-color: #469250;
+    background-color: #336d3b;
     border: solid #252323;
-    border-width: 35;
+    border-width: 43;
     display:inline-block;
 }
 
-li {
+nav {
+    position: fixed;
+    top: -8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_li {
     list-style-type: none;
     display: inline;
     font-size:large;
-    padding: 0.6cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    font-size: x-large;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    
+    text-decoration: underline;
 }
 
 p {
@@ -93,6 +113,3 @@ h3, h2 {
     font-style: normal;
     font-display: swap;
 }
-
-
-
