@@ -1,137 +1,139 @@
-body{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    background-color: #252323;
-    /* border: solid #252323; */
-    border-width: 43;
-    /* display:inline-block; */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  background-color: #252323;
+  /* border: solid #252323; */
+  border-width: 43;
+  /* display:inline-block; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
-    position: absolute;
-    width: 100%;
-    top: -8px;
-    display: flex;
-    justify-content: center;
-
+  position: absolute;
+  width: 100%;
+  top: -8px;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .navbar_li {
-    list-style-type: none;
-    display: inline;
-    font-size:large;
-    font-size: 1.2rem;
+  list-style-type: none;
+  display: inline;
+  font-size: large;
+  /* padding-left: 2cm; */
+  /* padding-right: 2cm; */
+  font-size: 1.2rem;
 }
 
 a {
-    color: aliceblue;
-    text-decoration: none;
+  color: aliceblue;
+  text-decoration: none;
 }
 
-a:hover{
-    
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 p {
-    font-family: "Libre Franklin";
+  font-family: "Libre Franklin";
 }
 
 h1 {
-    font-family: "Questrial";
+  font-family: "Questrial";
 }
 
-h3, h2 {
-    font-family: "Questrial";
+h3,
+h2 {
+  font-family: "Questrial";
 }
 
 .frontpage_group {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    height: 85%;
-    padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
 }
 
 .frontpage_gradient {
-    background-image: linear-gradient(to right, #469250 , #25c03a);
-    height: 88vh;
-    width: 90%;
-}
-
-.frontpage_left_block {
-    display: flex;
-    flex-direction: column;
-    width: 38%;
-    justify-content: space-evenly;
-}
-
-.frontpage_card_list {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: center; 
-}
-
-.card_main {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: rgb(211, 217, 222);
-    display: flex;
-    gap: 30px;
-    height: 85px;
-}
-
-
-
-.card_main img {
-    width: 20%;
-    object-fit: contain;
-
-}
-
-.card_subject {
-    width: 100%;
-    padding-left: 5px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.15);
-}
-
-.card_subject h3 {
-    line-height: 0;
+  background-image: linear-gradient(to right, #7fbd85, #36af47);
+  height: 88vh;
+  width: 90%;
 }
 
 .article_group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    height: 100%; 
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .article_block {
-    width: 43%;
-    background-color: aliceblue;
-    padding-left: 5px;
-    padding-right: 5px;
+  width: 43%;
+  background-color: aliceblue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.article_btn {
+  background-color: dodgerblue;
+  border-radius: 10%;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.frontpage_left_block {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  justify-content: space-evenly;
+}
+
+.frontpage_card_list {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+}
+
+.card_main {
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  display: flex;
+  gap: 30px;
+}
+
+.card_main img {
+  width: 5%;
+  object-fit: contain;
+}
+
+.card_subject {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 10px 15px -3px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown {
@@ -142,6 +144,7 @@ h3, h2 {
 .dropbtn {
   background-color: #252323;
   color: white;
+  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -153,8 +156,7 @@ h3, h2 {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Links inside dropdown content */
@@ -167,7 +169,7 @@ h3, h2 {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 /* Show the dropdown content on hover */
@@ -177,34 +179,30 @@ h3, h2 {
 
 /* Change background color of dropdown button on hover */
 .dropdown:hover .dropbtn {
-    background-color: #0a0a0a;
-    text-decoration: underline;
-}
-
-
-@font-face {
-    font-family: "Questrial";
-    src: 
-    url("../font/Questrial.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  background-color: #0a0a0a;
+  text-decoration: underline;
 }
 
 @font-face {
-    font-family: "Libre Franklin";
-    src: 
-    url("../font/LibreFranklin.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Questrial";
+  src: url("../font/Questrial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Libre Franklin Italic";
-    src: 
-    url("../font/LibreFranklin-Italic.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Libre Franklin";
+  src: url("../font/LibreFranklin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin Italic";
+  src: url("../font/LibreFranklin-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
