@@ -100,29 +100,13 @@ h3,h2 {
   justify-content: center;
 }
 
-.card_main {
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: rgb(211, 217, 222);
+.btns {
   display: flex;
-  gap: 30px;
-  height: 85px;
-}
-
-.card_main img {
-  width: 20%;
-  object-fit: contain;
-}
-
-.card_subject {
-  width: 100%;
-  padding-left: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
 }
 
 .card_btn {
