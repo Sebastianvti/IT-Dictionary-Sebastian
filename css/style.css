@@ -4,9 +4,7 @@ body {
   height: 100%;
   margin: 0%;
   background-color: #252323;
-  /* border: solid #252323; */
   border-width: 43;
-  /* display:inline-block; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -52,11 +50,32 @@ h1 {
   font-family: "Questrial";
 }
 
-h3,
-h2 {
+h3,h2 {
   font-family: "Questrial";
 }
 
+/* forskjellen mellom body og page body er at bare overflow x er hidden  */
+.page_body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  background-color: #252323;
+  border-width: 43;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* alle elements er wrapped rundt gradient for alle sider, funksjonen til gradient er for å lage en border rundt siden */
+.gradient {
+  background-image: linear-gradient(to right, #469250, #25c03a);
+  height: 88vh;
+  width: 90%;
+}
+
+/* class til div element som holder siden sammen  */
 .frontpage_group {
   display: flex;
   flex-direction: row;
@@ -64,12 +83,6 @@ h2 {
   align-items: center;
   height: 85%;
   padding: 50px;
-}
-
-.frontpage_gradient {
-  background-image: linear-gradient(to right, #469250, #25c03a);
-  height: 88vh;
-  width: 90%;
 }
 
 .frontpage_left_block {
@@ -121,6 +134,7 @@ h2 {
   cursor: pointer;
 }
 
+/* viktig fordi cards er ganske små og read more knappen vil ende opp utenfor card elementen */
 .card_subject h3 {
   line-height: 1;
 }
@@ -141,11 +155,11 @@ h2 {
   padding-right: 5px;
 }
 
+/* dropdown source: w3 schools */
 .dropdown {
   position: relative;
 }
 
-/* Style the dropdown button */
 .dropbtn {
   background-color: #252323;
   color: white;
@@ -154,7 +168,7 @@ h2 {
   cursor: pointer;
 }
 
-/* Dropdown content */
+/* Z index er for å holde teksten på toppen av skjermen */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -164,7 +178,6 @@ h2 {
   z-index: 10;
 }
 
-/* Links inside dropdown content */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -172,17 +185,13 @@ h2 {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
-/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change background color of dropdown button on hover */
 .dropdown:hover .dropbtn {
   background-color: #0a0a0a;
   text-decoration: underline;
