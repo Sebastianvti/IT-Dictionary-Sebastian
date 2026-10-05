@@ -63,18 +63,63 @@ h3,h2 {
   background-color: #252323;
   border-width: 43;
   overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   justify-content: center;
+  z-index: 5;
   align-items: center;
 }
 
 /* alle elements er wrapped rundt gradient for alle sider, funksjonen til gradient er for å lage en border rundt siden */
 .gradient {
+  overflow: auto;
   background-image: linear-gradient(to right, #469250, #25c03a);
   height: 88vh;
-  width: 90%;
+  width: 95%;
 }
 
+.navigation_group {
+  display: flex;
+  justify-content: center;
+  gap: 79.5%;
+}
+
+.frontpage_nex_btn {
+  padding: 4px;
+  border-radius: 10px;
+  color: aliceblue;
+  font-size: 16px;
+  border: none;
+  border-color: #252323;
+  background-color: rgb(73, 115, 193);
+}
+
+
+.article_nex_btn_left {
+  padding: 4px;
+  min-width: 80px;
+  border-bottom-right-radius: 10px;
+  color: aliceblue;
+  font-size: 16px;
+  border: none;
+  border-color: #252323;
+  background-color: rgb(73, 115, 193);
+}
+
+.article_nex_btn_right {
+  padding: 4px;
+  min-width: 80px;
+  border-bottom-left-radius: 10px;
+  color: aliceblue;
+  font-size: 16px;
+  border: none;
+  border-color: #252323;
+  background-color: rgb(73, 115, 193);
+}
+
+.frontpage_nex_btn:hover, .article_nex_btn_left:hover, .article_nex_btn_right:hover {
+  text-decoration: underline;
+}
 /* class til div element som holder siden sammen  */
 .frontpage_group {
   display: flex;
@@ -109,20 +154,6 @@ h3,h2 {
   padding: 50px;
 }
 
-.card_btn {
-  background-color: #3b52b8;
-  border-radius: 10px;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* viktig fordi cards er ganske små og read more knappen vil ende opp utenfor card elementen */
-.card_subject h3 {
-  line-height: 1;
-}
-
 .article_group {
   display: flex;
   flex-direction: row;
@@ -133,8 +164,10 @@ h3,h2 {
 }
 
 .article_block {
-  width: 43%;
+  width: 60%;
   background-color: aliceblue;
+  overflow: auto;
+  scrollbar-width: none;
   padding-left: 5px;
   padding-right: 5px;
 }
