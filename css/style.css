@@ -54,7 +54,6 @@ h3,h2 {
   font-family: "Questrial";
 }
 
-/* forskjellen mellom body og page body er at bare overflow x er hidden  */
 .page_body {
   box-sizing: border-box;
   width: 100%;
@@ -80,8 +79,10 @@ h3,h2 {
 
 .navigation_group {
   display: flex;
-  justify-content: center;
-  gap: 79.5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .frontpage_nex_btn {
@@ -91,7 +92,7 @@ h3,h2 {
   font-size: 16px;
   border: none;
   border-color: #252323;
-  background-color: rgb(73, 115, 193);
+  background-color: rgb(45, 88, 168);
 }
 
 
@@ -103,7 +104,7 @@ h3,h2 {
   font-size: 16px;
   border: none;
   border-color: #252323;
-  background-color: rgb(73, 115, 193);
+  background-color: rgb(45, 88, 168);
 }
 
 .article_nex_btn_right {
@@ -114,7 +115,7 @@ h3,h2 {
   font-size: 16px;
   border: none;
   border-color: #252323;
-  background-color: rgb(73, 115, 193);
+  background-color: rgb(45, 88, 168);
 }
 
 .frontpage_nex_btn:hover, .article_nex_btn_left:hover, .article_nex_btn_right:hover {
@@ -168,8 +169,20 @@ h3,h2 {
   background-color: aliceblue;
   overflow: auto;
   scrollbar-width: none;
+  scroll-behavior: smooth;
   padding-left: 5px;
   padding-right: 5px;
+  border: #252323 3.7px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style:solid;
+}
+
+.article_img {
+  max-width: 50%;
+  border: #252323 3px;
+  border-style: solid;
+  max-height: auto;
 }
 
 /* dropdown source: w3 schools */
